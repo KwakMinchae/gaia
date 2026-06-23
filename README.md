@@ -1,4 +1,4 @@
-# GAIA — Live Earth Sonification
+# GAIA is a Live Earth Sonification
 
 A real-time ambient music system driven by live NASA EONET geophysical events.
 Each event category plays one instrument in a continuous D minor jazz ensemble.
