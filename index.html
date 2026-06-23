@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GAIA</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <canvas id="c"></canvas>
+  <div id="ui">
+
+    <!-- Top left: just the name -->
+    <div id="hdr">
+      <div id="ttl">GAIA</div>
+    </div>
+
+    <!-- Top right: live count -->
+    <div id="sta">
+      <span id="dot"></span>
+      <span id="cnt">loading…</span>
+    </div>
+
+    <!-- Bottom centre: sound toggle -->
+    <button id="abtn">enable sound</button>
+
+    <!-- Bottom right: info button -->
+    <button id="infobtn" aria-label="show legend">?</button>
+
+    <!-- Legend overlay — hidden until info clicked -->
+    <div id="overlay">
+      <button id="overlay-close">×</button>
+      <div id="overlay-title">what you're hearing</div>
+      <div id="leg">
+        <div class="li"><div class="ld" style="background:#f97316"></div><span class="lname">wildfire</span><span class="lx">saxophone</span></div>
+        <div class="li"><div class="ld" style="background:#a855f7"></div><span class="lname">volcano</span><span class="lx">double bass</span></div>
+        <div class="li"><div class="ld" style="background:#38bdf8"></div><span class="lname">severe storm</span><span class="lx">drums</span></div>
+        <div class="li"><div class="ld" style="background:#f43f5e"></div><span class="lname">earthquake</span><span class="lx">piano</span></div>
+        <div class="li"><div class="ld" style="background:#34d399"></div><span class="lname">flood</span><span class="lx">trumpet</span></div>
+        <div class="li"><div class="ld" style="background:#cbd5e1"></div><span class="lname">sea ice / snow</span><span class="lx">vibraphone</span></div>
+        <div class="li"><div class="ld" style="background:#fbbf24"></div><span class="lname">dust / haze</span><span class="lx">guitar</span></div>
+        <div class="li"><div class="ld" style="background:#fb923c"></div><span class="lname">temp extremes</span><span class="lx">clarinet</span></div>
+      </div>
+      <div id="overlay-hint">rotate earth to shift the music</div>
+    </div>
+
+    <!-- Event detail panel -->
+    <div id="pan">
+      <button id="pcl">×</button>
+      <div id="ptl"></div>
+      <div id="pmt"></div>
+    </div>
+
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
